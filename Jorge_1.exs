@@ -1,9 +1,10 @@
+#EJERCICIO 2 DEL TALLER
+
 defmodule Main do
 
   def main do
     lista = [1, "a", 3.2, "Z", {5,6}]
     contar_elementos(lista)
-
   end
 
   def contar_elementos(lista) do
@@ -14,14 +15,13 @@ defmodule Main do
     IO.puts(acc)
   end
 
-  def contar_elementos(lista, acc) do
-    [h | t] = lista
-    contar_elementos(t, acc + )
-
-
+  def contar_elementos([_h | t], acc) do
+    contar_elementos(t, acc + 1)
   end
 
 
 
 
 end
+
+Main.main()
