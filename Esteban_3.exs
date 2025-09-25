@@ -15,11 +15,9 @@ defmodule Main do
   def total_productos(lista) do
     total_productos(lista, 0)
   end
-
-  # Caso base: lista vacía → devolver acumulado
+  
   def total_productos([], acc), do: acc
 
-  # Caso recursivo: sumar la cantidad del primer mapa al acumulador
   def total_productos([%{cantidad: c} | t], acc) do
     total_productos(t, acc + c)
   end

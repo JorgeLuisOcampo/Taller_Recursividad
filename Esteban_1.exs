@@ -10,12 +10,10 @@ defmodule Main do
     balance(lista, 0)
   end
 
-  # Caso base: lista vacía → imprimir resultado final
   def balance([], acc) do
     IO.puts("Balance final: #{acc}")
   end
 
-  # Caso recursivo: sumamos la transacción actual al acumulador
   def balance([h | t], acc) do
     balance(t, acc + h)
   end
