@@ -2,10 +2,10 @@
 defmodule Main do
 
   def main do
-    resultado = potencia(5, 3)
-    IO.puts("Resultado: #{resultado}")  # Debería imprimir 32
+    resultado = potencia(2, 5)
+    IO.puts("Resultado: #{resultado}")
   end
-  
+
   def potencia(_base, 0), do: 1
 
   def potencia(base, exponente) do
